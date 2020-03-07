@@ -120,7 +120,7 @@ function timeElapse(c) {
     f = "0" + f;
   }
   var a =
-    '<span class="digit">' +
+    '<span class="digit">' + '我们相识了: ' +
     g +
     '</span> days <span class="digit">' +
     b +

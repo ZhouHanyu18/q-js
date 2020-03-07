@@ -11,8 +11,14 @@ body {
 }
 #loveHeart {
   float: left;
-  width: 670px;
+  width: 700px;
   height: 625px;
+}
+.lovePicture {
+    margin-top: 20px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: -1;
 }
 #garden {
   width: 100%;
@@ -35,7 +41,8 @@ body {
 }
 #elapseClock .digit {
   font-family: "digit";
-  font-size: 36px;
+  font-size: 26px;
+  color: rgb(1, 248, 207);
 }
 #loveu {
   padding: 5px;
@@ -44,11 +51,6 @@ body {
   margin-right: 120px;
   text-align: right;
   display: none;
-}
-#loveu .signature {
-  margin-top: 10px;
-  font-size: 20px;
-  font-style: italic;
 }
 #clickSound {
   display: none;
@@ -67,9 +69,19 @@ body {
 }
 #code .keyword {
   color: #7f0055;
-  font-weight: bold;
   font-size: 20px;
 }
+#code .keyword1 {
+    color: #7f0055;
+    font-size: 30px;
+  }
+#code .signature {
+    margin-top: 50px;
+    margin-left: 250px;
+    font-size: 20px;
+    color: #3548b1;
+    font-style: italic;
+  }
 #code .placeholder {
   margin-left: 15px;
 }
