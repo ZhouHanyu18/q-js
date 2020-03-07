@@ -1,1 +1,175 @@
-body{margin:0;padding:0;background:#ffe;font-size:12px;overflow:auto}#mainDiv{width:100%;height:100%}#loveHeart{float:left;width:670px;height:625px}#garden{width:100%;height:100%}#elapseClock{text-align:right;font-size:18px;margin-top:10px;margin-bottom:10px}#words{font-family:"sans-serif";width:500px;font-size:24px;color:#666}#messages{display:none}#elapseClock .digit{font-family:"digit";font-size:36px}#loveu{padding:5px;font-size:22px;margin-top:80px;margin-right:120px;text-align:right;display:none}#loveu .signature{margin-top:10px;font-size:20px;font-style:italic}#clickSound{display:none}#code{float:left;width:440px;height:400px;color:#333;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px}#code .string{color:#2a36ff}#code .keyword{color:#7f0055;font-weight:bold;font-size:20px;}#code .placeholder{margin-left:15px}#code .space{margin-left:7px}#code .comments{color:#3f7f5f}#copyright{margin-top:10px;text-align:center;width:100%;color:#666}#errorMsg{width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0}#copyright a{color:#666}
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 238, 238);
+  font-size: 12px;
+  overflow: auto;
+}
+#mainDiv {
+  width: 100%;
+  height: 100%;
+}
+#loveHeart {
+  float: left;
+  width: 670px;
+  height: 625px;
+}
+#garden {
+  width: 100%;
+  height: 100%;
+}
+#elapseClock {
+  text-align: right;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#words {
+  font-family: "sans-serif";
+  width: 500px;
+  font-size: 24px;
+  color: #666;
+}
+#messages {
+  display: none;
+}
+#elapseClock .digit {
+  font-family: "digit";
+  font-size: 36px;
+}
+#loveu {
+  padding: 5px;
+  font-size: 22px;
+  margin-top: 80px;
+  margin-right: 120px;
+  text-align: right;
+  display: none;
+}
+#loveu .signature {
+  margin-top: 10px;
+  font-size: 20px;
+  font-style: italic;
+}
+#clickSound {
+  display: none;
+}
+#code {
+  float: left;
+  width: 440px;
+  height: 400px;
+  color: #333;
+  font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New",
+    "sans-serif";
+  font-size: 12px;
+}
+#code .string {
+  color: #2a36ff;
+}
+#code .keyword {
+  color: #7f0055;
+  font-weight: bold;
+  font-size: 20px;
+}
+#code .placeholder {
+  margin-left: 15px;
+}
+#code .space {
+  margin-left: 7px;
+}
+#code .comments {
+  color: #3f7f5f;
+}
+#copyright {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  color: #666;
+}
+#errorMsg {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+#copyright a {
+  color: #666;
+}
+#audio_btn {
+    position: fixed;
+    right: 8px;
+    top: 0;
+    z-index: 200;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.play_yinfu {
+    position: fixed;
+    right: 10px;
+    float: right;
+    top: 1px;
+    width: 30px;
+    height: 30px;
+    background-image: url("/images/music.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px 60px;
+}
+
+.rotate {
+    position: fixed;
+    right: 10px;
+    float: right;
+    top: 1px;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    background-image: url("/images/music_off.png");
+    -webkit-animation: rotating 1.2s linear infinite;
+    -moz-animation: rotating 1.2s linear infinite;
+    -o-animation: rotating 1.2s linear infinite;
+    animation: rotating 1.2s linear infinite;
+}
+
+
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotating {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+.off {
+    position: fixed;
+    right: 10px;
+    float: right;
+    top: 1px;
+    background-size: 100% 100%;
+    background-image: url("/images/music_no.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
