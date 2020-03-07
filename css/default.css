@@ -15,8 +15,6 @@ body {
   height: 625px;
 }
 .lovePicture {
-    margin-top: 20px;
-    margin-left: 50px;
     position: absolute;
     z-index: -1;
 }
